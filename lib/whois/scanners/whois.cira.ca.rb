@@ -63,7 +63,7 @@ module Whois
       end
 
       tokenizer :skip_comment do
-        @input.skip(/^%.*\n/)
+        @input.skip(/^%.*(\n|$)/)
       end
 
     end
